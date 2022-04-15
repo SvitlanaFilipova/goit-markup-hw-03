@@ -87,6 +87,7 @@ li {
 
 .title-back {
     background-color: var(--color-title);
+    padding: 200px 0 280px;
 }
 
 .big-title {
@@ -98,6 +99,7 @@ li {
     text-transform: uppercase;
     text-align: center;
     color: var(--color-header);
+    
 }
 
 .button-main-page {
