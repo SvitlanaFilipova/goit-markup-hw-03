@@ -26,10 +26,18 @@ body {
     
 }
 
+h1, h2, h3, p {margin: 0;}
+
+img {
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
 
 /* логотип */
 .header-back {
     background-color: var(--color-header);
+    border-bottom: 1px #ECECEC;
 }
 
 .list, .list-header, .list-header-two, .list-benefits, .proposition-list-general, .list-button-portfolio, .list-our-work, .list-our-team {
@@ -83,7 +91,7 @@ body {
 .main-nav {
     display: flex;
     align-items: center;
-}
+    }
 
 .nav-list {
     display: block;
@@ -123,6 +131,9 @@ body {
     color: var(--accent-color);
 }
 
+.container.main {
+    display: flex;
+}
 
 /* main part */
 
@@ -140,7 +151,7 @@ body {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-bottom: 94px;
+    
 }
 
 .big-title {
@@ -174,7 +185,7 @@ body {
     color: var(--color-header);
     cursor: pointer;
     padding: 10px 32px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 
@@ -187,8 +198,7 @@ body {
 
 .list-button-portfolio {
     display: flex;
-    margin-top: 100px;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
     justify-content: center;
 
 }
@@ -222,6 +232,19 @@ margin-right: 8px;
     color: var(--color-header);
 }
 
+.projects {
+    padding: 20px 24px;
+
+    border-top: 0px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-left: 1px;
+    border-color: var(--color-proposition-list);
+    border-style: solid;
+    
+
+}
+
 .section-portfolio {
     margin-bottom: 94px;
 }
@@ -236,7 +259,6 @@ margin-right: 8px;
     margin-right: 30px;
     margin-bottom: 30px;
 
-    border: 1px solid #EEEEEE;
 }
 
 
@@ -248,11 +270,12 @@ margin-right: 8px;
     margin-bottom: 0px;
 }
 
-.projects-name {
-    margin-top: 20px;
-    margin-bottom: 4px;
-    margin-left: 24px;
 
+
+
+.projects-name {
+    
+    margin-bottom: 4px;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -263,9 +286,7 @@ margin-right: 8px;
 
 .projects-description {
     margin-top: 0px;
-    margin-left: 24px;
-    margin-bottom: 20px;
-    
+      
 }
 
 /* index page benefits*/
@@ -282,8 +303,8 @@ margin-right: 8px;
     overflow: hidden;
 }
 
-.section-benefits, .section-work {
-margin-bottom: 94px;
+.section {
+padding: 94px 0;
 }
 
 .list-benefits {
@@ -321,17 +342,22 @@ margin-bottom: 94px;
 }
 
 /* index-page our work */
+.section.our-work {
+    padding-top: 0px;
+}
+
 .section-title {
+    margin-bottom: 50px;
+    margin-top: 0px;
+
+    
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
-    margin-top: 0px;
-    
-}
+   }
 
 .list-our-work {
     display: flex;
@@ -348,11 +374,9 @@ margin-bottom: 94px;
 
 /* index page team */
 
-.our-team-back {
+section.our-team-back {
     background-color: var(--color-button-portfolio);
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+   }
 
 .list-our-team {
     display: flex;
@@ -366,8 +390,12 @@ margin-bottom: 94px;
     margin-right: 0px;
 }
 
+.team-h3-p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .team-names {
-    margin-top: 30px;
+    
     margin-bottom: 10px;
 
     font-family: var(--main-font);
@@ -380,7 +408,6 @@ margin-bottom: 94px;
 }
 
 .team-position {
-    margin-bottom: 30px;
     margin-top: 0px;
 
     font-family: var(--main-font);
@@ -417,6 +444,10 @@ margin-bottom: 94px;
 
 .li-footer {
     margin-bottom: 9px;
+}
+
+.li-footer:last-child {
+    margin-bottom: 0px;
 }
 
 .logo-studio-footer {
