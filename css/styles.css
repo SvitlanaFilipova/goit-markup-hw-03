@@ -243,10 +243,10 @@ img {
   align-items: center;
   text-align: center;
   color: var(--color-header);
+  border: 0px;
   cursor: pointer;
   padding: 10px 32px;
   margin-bottom: 0px;
-  border: 0px;
 }
 
 .button-main-page:hover,
