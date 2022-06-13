@@ -616,7 +616,7 @@ section.our-team-back {
   display: flex;
   align-items: baseline;
 }
-.flex-footer .li-footer {
+.flex-footer {
   margin-bottom: 9px;
 }
 
@@ -659,7 +659,7 @@ section.our-team-back {
 }
 
 .contacts {
-  margin-bottom: 9px;
+  /* margin-bottom: 9px; */
 
   font-family: var(--main-font);
   font-size: 14px;
